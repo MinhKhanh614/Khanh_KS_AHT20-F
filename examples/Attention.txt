@@ -1,0 +1,94 @@
+Giới thiệu chung
+Loại cảm biến: đo nhiệt độ và độ ẩm.
+Đặc điểm nổi bật:
+
+Đã được hiệu chuẩn sẵn tại nhà máy.
+
+Ngõ ra số theo chuẩn I²C (IIC).
+
+Kích thước nhỏ gọn: gói SMD 3×3 mm, cao 1 mm.
+
+Có màng lọc PTFE chống bụi và thấm khí.
+
+Ổn định lâu dài, chống nhiễu tốt.
+
+📊 Thông số chính
+Độ ẩm:
+
+Độ phân giải: 0.024 %RH.
+
+Sai số điển hình: ±2 %RH.
+
+Dải đo: 0–100 %RH.
+
+Thời gian đáp ứng: ~8 giây.
+
+Nhiệt độ:
+
+Độ phân giải: 0.01 °C.
+
+Sai số điển hình: ±0.3 °C.
+
+Dải đo: -40 đến +85 °C.
+
+Thời gian đáp ứng: ~5–30 giây.
+
+⚡ Điện và giao tiếp
+Nguồn cấp: 2.2–5.5 V.
+
+Giao tiếp: I²C với địa chỉ thiết bị 0x38.
+
+Có yêu cầu thêm tụ lọc 10 µF giữa VDD và GND để ổn định nguồn.
+
+🛠️ Ứng dụng
+Dùng trong điện tử tiêu dùng, y tế, ô tô, công nghiệp, khí tượng.
+
+Ví dụ: máy hút ẩm, tủ lạnh, HVAC, thiết bị đo kiểm.
+
+🔑 Điểm cần lưu ý
+Hoạt động tốt trong khoảng 0–80 %RH. Nếu >80 %RH lâu dài, cảm biến có thể bị trôi tín hiệu nhưng sẽ tự hồi phục khi trở lại điều kiện bình thường.
+
+Không nên để trong môi trường có hơi dung môi, keo, băng dính dễ bay hơi vì sẽ làm sai lệch kết quả.
+
+Có cơ chế phục hồi bằng sấy khô hoặc tái hydrat hóa nếu cảm biến bị trôi.
+
+Các lưu ý quan trọng khi dùng AHT20-F
+Điều kiện hoạt động
+
+Hoạt động ổn định trong khoảng 0–80 %RH. Nếu để >80 %RH lâu dài, cảm biến có thể bị trôi tín hiệu (drift ~3%RH sau 60 giờ). Khi trở lại điều kiện bình thường, cảm biến sẽ tự hồi phục.
+
+Nhiệt độ làm việc: -40 đến +85 °C.
+
+Ảnh hưởng môi trường
+
+Tránh tiếp xúc lâu dài với hơi dung môi, keo, băng dính, vật liệu có mùi mạnh vì sẽ làm sai lệch kết quả đo.
+
+Không dùng trong môi trường có nước ngưng tụ hoặc khí ăn mòn.
+
+Hàn và lắp ráp
+
+Cảm biến được thiết kế cho hàn reflow theo chuẩn JEDEC, nhiệt độ tối đa 260 °C, thời gian <30 giây.
+
+Sau khi hàn, cần để cảm biến tái hydrat hóa (ví dụ: 25 °C, >75 %RH trong 12–72 giờ) để tránh sai lệch số liệu.
+
+Nên dùng vật liệu bao quanh ít hút ẩm (PTFE, PE, PPS…) để không gây trễ phản ứng.
+
+Nguồn và tín hiệu
+
+Nguồn cấp: 2.2–5.5 V, cần thêm tụ lọc 10 µF gần chân VDD–GND.
+
+Đường SDA/SCL phải có điện trở kéo lên (2–4.7 kΩ).
+
+Tránh để dây tín hiệu song song quá gần nhau → dễ gây nhiễu, nên chèn VDD/GND giữa các đường.
+
+Tần suất đo
+
+Nếu đo quá thường xuyên, cảm biến tự nóng lên → sai số.
+
+Khuyến nghị chu kỳ đo ≥1 giây/lần, tần số I²C trong khoảng 10–400 kHz.
+
+Bảo quản
+
+Nên lưu trữ trong túi ESD kín, nhiệt độ 10–50 °C, độ ẩm 20–60 %RH.
+
+Tránh môi trường có hơi hóa chất trong quá trình vận chuyển và sản xuất.

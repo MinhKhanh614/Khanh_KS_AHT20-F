@@ -1,0 +1,32 @@
+1. Điều kiện môi trường
+[ ] Giữ độ ẩm trong khoảng 0–80 %RH để tránh trôi tín hiệu.
+
+[ ] Tránh môi trường có hơi dung môi, keo, băng dính, vật liệu có mùi mạnh.
+
+[ ] Không để cảm biến tiếp xúc với nước ngưng tụ hoặc khí ăn mòn.
+
+2. Hàn và lắp ráp
+[ ] Dùng hàn reflow theo chuẩn JEDEC, nhiệt độ tối đa 260 °C, thời gian <30 giây.
+
+[ ] Sau khi hàn, để cảm biến tái hydrat hóa (25 °C, >75 %RH trong 12–72 giờ).
+
+[ ] Chọn vật liệu bao quanh ít hút ẩm (PTFE, PE, PPS…).
+
+3. Nguồn và tín hiệu
+[ ] Nguồn cấp trong khoảng 2.2–5.5 V.
+
+[ ] Thêm tụ lọc 10 µF gần chân VDD–GND.
+
+[ ] Đường SDA/SCL có điện trở kéo lên (2–4.7 kΩ).
+
+[ ] Tránh để dây tín hiệu song song quá gần nhau → chèn VDD/GND giữa các đường.
+
+4. Tần suất đo
+[ ] Chu kỳ đo ≥1 giây/lần để tránh cảm biến tự nóng lên.
+
+[ ] Tần số I²C trong khoảng 10–400 kHz.
+
+5. Bảo quản
+[ ] Lưu trữ trong túi ESD kín, nhiệt độ 10–50 °C, độ ẩm 20–60 %RH.
+
+[ ] Tránh môi trường có hơi hóa chất trong quá trình vận chuyển và sản xuất.
